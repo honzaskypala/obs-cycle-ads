@@ -20,9 +20,9 @@ class AdCycler:
         if self.timer_on:
             current_scene = S.obs_scene_from_source(S.obs_frontend_get_current_scene())
             ads = tuple(filter(lambda x: x[:3] == "ad_", [S.obs_source_get_name(i) for i in S.obs_enum_sources()]))
-            if (len(ads) == 1):  # if only one ad, then just restart playing the video
+            if len(ads) == 1:  # if only one ad, then just restart playing the video
                 S.obs_source_media_restart(S.obs_get_source_by_name(ads[0]))
-            elif (len(ads) > 1): # if more than one ad, then hide the current one and show the next one; showing next one will automatically restart the video the play
+            elif len(ads) > 1: # if more than one ad, then hide the current one and show the next one; showing next one will automatically restart the video the play
                 ad_to_show = ads[0]
                 visible_ad_found = False
                 for ad in ads:
