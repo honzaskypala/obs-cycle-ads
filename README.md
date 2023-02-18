@@ -1,6 +1,6 @@
 # OBS script for cycling ads media
 
-This is a script for [Open Broadcaster Software](https://obsproject.com/) (OBS), that perform interval based cycle of media. Those media may be for example advertisements, or they can be call-to-actions banners (subscribe to my channel, give it a like etc.)
+This is a script for [Open Broadcaster Software](https://obsproject.com/) (OBS), that perform interval based cycle of media. Those media may be for example advertisements, or they can be call-to-action banners (subscribe to my channel, give it a like etc.)
 
 If only one ad media is present, then the script restarts the play of the media on the specified interval. If there are multiple ad media present, then the media cycle, only one will be displayed at a time, changing on the interval.
 
