@@ -1,8 +1,8 @@
-# OBS script for rotating ads media
+# OBS script for cycling ads media
 
-This is a script for [Open Broadcaster Software](https://obsproject.com/) (OBS), that perform interval based rotation of media. Those media may be for example advertisements, or they can be call-to-actions (subscribe to my channel, give it a like banners etc.)
+This is a script for [Open Broadcaster Software](https://obsproject.com/) (OBS), that perform interval based cycle of media. Those media may be for example advertisements, or they can be call-to-actions (subscribe to my channel, give it a like banners etc.)
 
-If only one ad media is present, then the script restarts the play of the media on the specified interval. If there are multiple ad media present, then the media rotate, only one will be displayed at a time, changing on the interval.
+If only one ad media is present, then the script restarts the play of the media on the specified interval. If there are multiple ad media present, then the media cycle, only one will be displayed at a time, changing on the interval.
 
 ## Pre-requisites
 
@@ -37,7 +37,7 @@ You just need to start the script after you start OBS. It will not start automat
 
 ## Known issues
 
-Due to a [bug](https://github.com/obsproject/obs-studio/issues/8290) in OBS, I could not implement stopping the script properly. If you press the Stop button, the flow only stops on its next execution (when the rotation triggers next time, it stops the timer instead of running next cycle).
+Due to a [bug](https://github.com/obsproject/obs-studio/issues/8290) in OBS, I could not implement stopping the script properly. If you press the Stop button, the flow only stops on its next execution (when the cycle triggers next time, it stops the timer instead of running next cycle).
 
 Due to that, Start button should not be pressed again until the cycle is finished.
 
