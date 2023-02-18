@@ -37,7 +37,7 @@ You just need to start the script after you start OBS. It will not start automat
 
 ## Known issues
 
-Due to a bug in OBS, I could not implement stopping the script properly. If you press the Stop button, the flow only stops on its next execution (when the rotation triggers next time, it stops the timer instead of running next cycle).
+Due to a [bug](https://github.com/obsproject/obs-studio/issues/8290) in OBS, I could not implement stopping the script properly. If you press the Stop button, the flow only stops on its next execution (when the rotation triggers next time, it stops the timer instead of running next cycle).
 
 Due to that, Start button should not be pressed again until the cycle is finished.
 
