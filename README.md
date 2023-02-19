@@ -16,7 +16,7 @@ I have successfully tested the script with OBS 29.0.2 and Python 3.10.10 on macO
 
 ## Setup
 
-Name your ad media (sources) so they start with ad_<br />
+Name your ad media (sources) so they start with the same prefix. The default prefix is ad_, but you can change the prefix in the settings.<br />
 The script will operate on media named this way; it will not touch other sources.
 
 If there is only one ad media, then it needs to be visible. The script will not change its visibility, it will only restart the play on the specified interval.
